@@ -21,10 +21,14 @@ st.text_input('Fist name:')
 st.text_input('Last name:')
 st.text_input('E-mail:')
 st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
+st.date_input('Ok tell me your birthday')
+st.time_input('What time ?')
 st.checkbox('I did not read but I agree')
 st.button('Click me')
 st.button('Do not click')
 st.button('Alright click then')
+st.text_area('Type a message that I will not read')
+st.color_picker('Pick a color if you wish')
 
 #input widgets
 #st.sidebar.subheader('input features')
@@ -39,25 +43,23 @@ st.radio('Pick one', ['cats', 'dogs'])
 st.selectbox('Pick one', ['cats', 'dogs'])
 st.multiselect('Buy', ['milk', 'apples', 'potatoes'])
 st.slider('Pick a number', 0, 100)
-'''
 st.select_slider('Pick a size', ['S', 'M', 'L'])
 st.text_input('First name')
 st.number_input('Pick a number', 0, 10)
 st.text_area('Text to translate')
-st.date_input('Your birthday')
 st.time_input('Meeting time')
 st.color_picker('Pick a color')
-
 '''
+
 with st.form(key='Form name'):
     username = st.text_input('Username')
     password = st.text_input('Password')
     st.form_submit_button('Login')
-'''
+
 
 with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral LLL", 1, 5000, 1)
-    num_turns = st.slider("Number of turns in spiral LLL", 1, 100, 1)
+    total_points = st.slider("Number of points in spiral LLL", 1, 5000, 2000)
+    num_turns = st.slider("Number of turns in spiral LLL", 1, 100, 5)
 
     Point = namedtuple('Point', 'x y')
     data = []
