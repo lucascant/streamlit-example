@@ -114,6 +114,8 @@ with tab4:
         fdb = st.date_input('Father`s birthday')
     faddress = st.text_input('Father`s address:').upper()
     tab4.text(f'Your fist name is: {fname}')
+    
+    col1, col2 = st.columns(2)
     with col1:
         mname = st.text_input('Mother`s Name:').upper()
     with col2:
