@@ -57,7 +57,7 @@ col1.write("This is column 1")
 col2.write("This is column 2")
 
 with col1:
-    col2.write("This is column 1 too")
+    col1.write("This is column 1 too")
 with col2:
     col2.write("This is column 3")
     col2.write("This is column 4")
