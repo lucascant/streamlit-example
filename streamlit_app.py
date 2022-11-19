@@ -21,9 +21,14 @@ st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
 dbirth = st.date_input('Ok tell me your birthday')
 time = st.time_input('What time ?')
 st.checkbox('I did not read but I agree')
-button1 = st.button('Click me')
-button2 = st.button('Do not click')
-button3 = st.button('Alright click then')
+
+colA, colB, colC, colD = st.columns(4)
+with colA:
+    button1 = st.button('Click me')
+with colB:
+    button2 = st.button('Do not click')
+with colC:
+    button3 = st.button('Alright click then')
 st.write("Please contact us to get access!")
 st.text_area('Type a message that I will not read')
 
@@ -74,6 +79,7 @@ with col101:
     st.button('Here')
 
 ''' ========================= SPACE ============================='''
+color1 = st.color_picker('Pick a color') 
 
 tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Hidden here", "you can guess","Check here"])
 
@@ -89,13 +95,12 @@ with tab1:
         #time_end = st.time_input('What time ?')
 
 with tab2:
-    color1 = st.color_picker('Pick a color')  
-
     col1, col2, col3, col4 = st.columns(4)
-    col1.write('Color 1 code:', color1)
-    col2.write('Color 2 code:', color1)
-    col3.write('Color 3 code:', color1)
-    col4.write('Color 4 code:', color1)
+    col1.write(color1)
+    col2.write('Column')
+    col2.write('Column')
+    col2.write('Column')
+
 
 with tab3:
     #file = st.file_uploader("Upload a file to nowhere")
