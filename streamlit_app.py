@@ -119,7 +119,7 @@ with tab4:
     with col3:
         mname = st.text_input('Mother`s Name:').upper()
     with col4:
-        mdb = st.date_input('Father`s birthday')
+        mdb = st.date_input('Mother`s birthday')
     maddress = st.text_input('Mother`s address:').upper()
 
 
