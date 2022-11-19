@@ -30,14 +30,12 @@ st.color_picker('Pick a color if you wish')
 
 col4, col5 = st.columns(2)
 with col4:
-    st.button('Click me')
+    st.text(button1)
 with col5:
-    st.button('Do not click')
+    st.text(time)
+    st.text('I am here')
 
 
-
-st.text(button1)
-st.text(time)
 
 with st.form(key='Form name'):
     username = st.text_input('Username')
@@ -76,7 +74,7 @@ with col2:
     col2.write("This is column 3")
     col2.write("This is column 4")
 
-tab1, tab2, tab3 = st.tabs(["Tab 1", "Hidden here", "you can guess"])
+tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Hidden here", "you can guess","Check here"])
 with tab1:
     tab1.write("this is tab 1")
 
@@ -91,6 +89,8 @@ with tab2:
 with tab3:
     st.file_uploader("Upload a file to nowhere")
 
+with tab4:
+    tab1.write("There is nothing to see here")
 
 
 '''
