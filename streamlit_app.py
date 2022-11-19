@@ -15,7 +15,16 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
-st.title('Uber pickups in NYC')
+st.title('Uber pickups in NYC test')
+
+st.text_input('Fist name:')
+st.text_input('Last name:')
+st.text_input('E-mail:')
+st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
+st.checkbox('I did not read but I agree')
+st.button('Click me')
+st.button('Do not click')
+st.button('Alright click then')
 
 #input widgets
 '''
@@ -25,6 +34,7 @@ var2 = st.sidebar.slider('feature 2:', 1, 1000, 100)
 var3 = st.sidebar.slider('feature 3:', 1, 1000, 100)
 '''
 
+'''
 st.button('Click me')
 st.checkbox('I agree')
 st.radio('Pick one', ['cats', 'dogs'])
@@ -38,8 +48,8 @@ st.number_input('Pick a number', 0, 10)
 st.text_area('Text to translate')
 st.date_input('Your birthday')
 st.time_input('Meeting time')
-st.file_uploader('Upload a CSV')
-st.download_button('Download file', data)
+#st.file_uploader('Upload a CSV')
+#st.download_button('Download file', data)
 st.camera_input("Take a picture")
 st.color_picker('Pick a color')
 
