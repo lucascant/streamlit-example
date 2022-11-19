@@ -5,17 +5,14 @@ import pandas as pd
 import streamlit as st
 
 """
-# Welcome to Streamlit!
+# Welcome to My Application!
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
+Complete the form to customize this app
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
-st.title('Uber pickups in NYC test')
+st.title('Uber not pickups')
 
 st.text_input('Fist name:')
 st.text_input('Last name:')
