@@ -100,8 +100,10 @@ with tab1:
         end_time = st.time_input('What time did you end?')
 
 with tab2:
-    color2 = st.color_picker('Pick a color') 
+
     col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        color2 = st.color_picker('Pick a color') 
     col1.write(color1)
     col2.write('Column')
     col2.write('Column')
