@@ -21,12 +21,11 @@ st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
 dbirth = st.date_input('Ok tell me your birthday')
 time = st.time_input('What time ?')
 st.checkbox('I did not read but I agree')
-st.button('Click me')
-st.button('Do not click')
-button1 = st.button('Alright click then')
+button1 = st.button('Click me')
+button2 = st.button('Do not click')
+button3 = st.button('Alright click then')
 st.write("Please contact us to get access!")
 st.text_area('Type a message that I will not read')
-st.color_picker('Pick a color if you wish')
 
 col4, col5 = st.columns(2)
 with col4:
@@ -73,7 +72,7 @@ with col2:
     col2.write("This is column 3")
     col2.write("This is column 4")
 
-''' ============== SPACE ============'''
+''' ========================= SPACE ============================='''
 
 tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Hidden here", "you can guess","Check here"])
 
@@ -102,7 +101,7 @@ with tab2:
 
 with tab3:
     file = st.file_uploader("Upload a file to nowhere")
-    
+
 
 with tab4:
     tab4.write("This is you told me so far")
