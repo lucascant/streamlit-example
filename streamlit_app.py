@@ -24,6 +24,7 @@ st.checkbox('I did not read but I agree')
 st.button('Click me')
 st.button('Do not click')
 st.button('Alright click then')
+st.write("Please contact us to get access!")
 st.text_area('Type a message that I will not read')
 st.color_picker('Pick a color if you wish')
 
@@ -48,11 +49,22 @@ st.time_input('Meeting time')
 st.color_picker('Pick a color')
 '''
 
+col1, col2 = st.columns(2)
+col1.write("This is column 1")
+col2.write("This is column 2")
+
+with col1:
+    st.radio('Select one:', [1, 2])
+
+tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
+tab1.write("this is tab 1")
+tab2.write("this is tab 2")
+
 with st.form(key='Form name'):
     username = st.text_input('Username')
     password = st.text_input('Password')
     st.form_submit_button('Login')
-
+    st.form_submit_button('Cancel')
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral LLL", 1, 5000, 2000)
