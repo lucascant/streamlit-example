@@ -23,13 +23,13 @@ time = st.time_input('What time ?')
 st.write("Please contact us to get the details!")
 st.checkbox('I did not read but I agree')
 
-colA, colB, colC, colD, colE, colF = st.columns(6)
+colA, colB, colC, colD, colE = st.columns(5)
 with colA:
     button1 = st.button('Click me')
 with colB:
     button2 = st.button('Do not click')
 with colC:
-    button3 = st.button('Alright click then')
+    button3 = st.button('Alright click')
 st.text_area('Type a message that I will not read')
 
 col4, col5 = st.columns(2)
@@ -37,7 +37,7 @@ with col4:
     st.text(button1)
 with col5:
     st.text(time)
-    st.text('I am here')
+    st.text('I am here',time)
 
 
 with st.form(key='Form name'):
@@ -88,11 +88,11 @@ with tab1:
     with col1:
         task1 = st.text_input('Task')
     with col2:
-        starttime = st.date_input('Start:')
-        endtime = st.date_input('End:')
+        start_date = st.date_input('Start:')
+        end_date = st.date_input('End:')
     with col3:
-        time_start = st.time_input('What time ?')
-        time_end = st.time_input('What time ?')
+        start_time = st.time_input('What time did you start?')
+        end_time = st.time_input('What time did you end?')
 
 with tab2:
     col1, col2, col3, col4 = st.columns(4)
