@@ -89,20 +89,17 @@ with tab1:
         #time_end = st.time_input('What time ?')
 
 with tab2:
-    #color1 = st.color_picker('Pick a color')
-    #color2 = st.color_picker('Pick a color')
-    #color3 = st.color_picker('Pick a color')
-    #color3 = st.color_picker('Pick a color')   
+    color1 = st.color_picker('Pick a color')  
 
-    #col1, col2, col3, col4 = st.columns(4)
-    #col1.write('Color 1 code:', color1)
-    #col2.write('Color 2 code:', color2)
-    #col3.write('Color 3 code:', color3)
-    #col4.write('Color 4 code:', color4)
+    col1, col2, col3, col4 = st.columns(4)
+    col1.write('Color 1 code:', color1)
+    col2.write('Color 2 code:', color1)
+    col3.write('Color 3 code:', color1)
+    col4.write('Color 4 code:', color1)
 
 with tab3:
     #file = st.file_uploader("Upload a file to nowhere")
-
+    tab4.write("A little tricky")
 
 with tab4:
     tab4.write("This is you told me so far")
