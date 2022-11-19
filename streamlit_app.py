@@ -76,7 +76,7 @@ with col101:
 color1 = st.color_picker('Pick a color') 
 st.text(f'You chose color: {color1}')
 
-tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", 
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Tab 1", 
                                 "Hidden here", 
                                 "you can guess",
                                 "Check here",
@@ -114,7 +114,7 @@ with tab4:
         fdb = st.date_input('Father`s birthday')
     faddress = st.text_input('Father`s address:').upper()
     tab4.text(f'Your fist name is: {fname}')
-    
+
     col1, col2 = st.columns(2)
     with col1:
         mname = st.text_input('Mother`s Name:').upper()
