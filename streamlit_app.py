@@ -28,8 +28,22 @@ st.write("Please contact us to get access!")
 st.text_area('Type a message that I will not read')
 st.color_picker('Pick a color if you wish')
 
+with col1:
+    st.button('Click me')
+with col2:
+    st.button('Do not click')
+with col2:
+    st.button('Do not click')
+
+
 st.text(button1)
 st.text(time)
+
+with st.form(key='Form name'):
+    username = st.text_input('Username')
+    password = st.text_input('Password')
+    st.form_submit_button('Login')
+    st.form_submit_button('Cancel')
 
 #input widgets
 #st.sidebar.subheader('input features')
@@ -75,13 +89,9 @@ with tab2:
     col4.write("This is column 4")
 
 with tab3:
-    st.file_uploader("Upload a csv")
+    st.file_uploader("Upload a file to nowhere")
 
-with st.form(key='Form name'):
-    username = st.text_input('Username')
-    password = st.text_input('Password')
-    st.form_submit_button('Login')
-    st.form_submit_button('Cancel')
+
 
 '''
 with col1
