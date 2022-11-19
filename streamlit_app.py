@@ -68,7 +68,7 @@ col101.write("This is column 2")
 
 with col100:
     col100.write("This is column 1 too")
-with col2:
+with col101:
     col101.write("This is column 2")
     col101.write("This is column 2")
     st.button('Here')
