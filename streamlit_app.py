@@ -33,9 +33,9 @@ with colB:
     st.text(button2)
 with colC:
     button3 = st.button('Alright click')
-    st.text(button2)
+    st.text(button3)
 
-
+''' SOMETHING HAPPENING HERE '''
 
 col4, col5 = st.columns(2)
 with col4:
@@ -100,6 +100,7 @@ with tab1:
         end_time = st.time_input('What time did you end?')
 
 with tab2:
+    color2 = st.color_picker('Pick a color') 
     col1, col2, col3, col4 = st.columns(4)
     col1.write(color1)
     col2.write('Column')
