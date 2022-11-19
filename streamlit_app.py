@@ -57,7 +57,7 @@ col1.write("This is column 1")
 col2.write("This is column 2")
 
 with col1:
-    st.radio('Select one:', [1, 2])
+    col2.write("This is column 1 too")
 with col2:
     col2.write("This is column 3")
     col2.write("This is column 4")
@@ -65,8 +65,6 @@ with col2:
 #tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 with tab1:
     tab1.write("this is tab 1")
-    username = st.text_input('Username')
-    password = st.text_input('Password')
 
 
 with tab2:    
