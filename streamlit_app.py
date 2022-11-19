@@ -18,7 +18,7 @@ st.text_input('Fist name:')
 st.text_input('Last name:')
 st.text_input('E-mail:')
 st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
-st.date_input('Ok tell me your birthday')
+dbirth = st.date_input('Ok tell me your birthday')
 time = st.time_input('What time ?')
 st.checkbox('I did not read but I agree')
 st.button('Click me')
@@ -58,14 +58,15 @@ col2.write("This is column 2")
 
 with col1:
     st.radio('Select one:', [1, 2])
+with col2:
+    st.radio('Select one:', [1, 2])
 
-tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
+#tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 with tab1:
     tab1.write("this is tab 1")
     username = st.text_input('Username')
     password = st.text_input('Password')
-    st.form_submit_button('Login')
-    st.form_submit_button('Cancel')
+
 
 with tab2:    
     tab2.write("this is tab 2")
@@ -83,6 +84,16 @@ with st.form(key='Form name'):
     password = st.text_input('Password')
     st.form_submit_button('Login')
     st.form_submit_button('Cancel')
+
+
+with col1
+    task1 = st.text_input('Task')
+with col2
+    starttime = st.date_input('Start:')
+    time_start = st.time_input('What time ?')
+with col3
+    endtime = st.date_input('End:')
+    time_end = st.time_input('What time ?')
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral LLL", 1, 5000, 2000)
