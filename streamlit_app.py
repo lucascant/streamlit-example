@@ -28,6 +28,7 @@ st.write("Please contact us to get access!")
 st.text_area('Type a message that I will not read')
 st.color_picker('Pick a color if you wish')
 
+col1, col2, col3 = st.columns(3)
 with col1:
     st.button('Click me')
 with col2:
