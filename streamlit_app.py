@@ -103,27 +103,28 @@ with tab3:
 
 with tab4:
     col1, col2 = st.columns(2)
-    fname = st.text_input("Father`s name:").upper()
-    fdb = st.date_input('Father`s birthday')
+    with col1:
+        fname = st.text_input("Father`s name:").upper()
+    with col2:
+        fdb = st.date_input('Father`s birthday')
     faddress = st.text_input('Father`s address:').upper()
     tab4.text(f'Your fist name is: {fname}')
-    mname = st.text_input('Mother`s Name:').upper()
+    mname = col1.st.text_input('Mother`s Name:').upper()
     mdb = st.date_input('Father`s birthday')
     maddress = st.text_input('Mother`s address:').upper()
-    tab4.text(f'Your last name is: {lname}')
-    tab4.text(f'Your e-mail is : {email}')
+
 
 with tab5:
-    tab4.write("This is you told me so far")
-    tab4.text(f'Your fist name is: {fname}')
-    tab4.text(f'Your last name is: {lname}')
-    tab4.text(f'Your e-mail is : {email}')
+    tab5.write("This is you told me so far")
+    tab5.text(f'Your fist name is: {fname}')
+    tab5.text(f'Your last name is: {lname}')
+    tab5.text(f'Your e-mail is : {email}')
 
 with tab6:
-    tab4.write("This is you told me so far")
-    tab4.text(f'Your fist name is: {fname}')
-    tab4.text(f'Your last name is: {lname}')
-    tab4.text(f'Your e-mail is : {email}')
+    tab6.write("This is you told me so far")
+    tab6.text(f'Your fist name is: {fname}')
+    tab6.text(f'Your last name is: {lname}')
+    tab6.text(f'Your e-mail is : {email}')
 
 '''==     =    =   =  = = MORE SPACE = =  =   =    =     =='''
 '''==     =    =   =  = = MORE SPACE = =  =   =    =     =='''
