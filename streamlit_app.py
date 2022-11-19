@@ -62,15 +62,16 @@ st.time_input('Meeting time')
 st.color_picker('Pick a color')
 '''
 
-col1, col2 = st.columns(2)
-col1.write("This is column 1")
-col2.write("This is column 2")
+col100, col101 = st.columns(2)
+col100.write("This is column 1")
+col101.write("This is column 2")
 
-with col1:
-    col1.write("This is column 1 too")
+with col100:
+    col100.write("This is column 1 too")
 with col2:
-    col2.write("This is column 3")
-    col2.write("This is column 4")
+    col101.write("This is column 2")
+    col101.write("This is column 2")
+    st.button('Here')
 
 ''' ========================= SPACE ============================='''
 
@@ -88,12 +89,12 @@ with tab1:
         #time_end = st.time_input('What time ?')
 
 with tab2:
-    color1 = st.color_picker('Pick a color')
-    color2 = st.color_picker('Pick a color')
-    color3 = st.color_picker('Pick a color')
-    color3 = st.color_picker('Pick a color')   
+    #color1 = st.color_picker('Pick a color')
+    #color2 = st.color_picker('Pick a color')
+    #color3 = st.color_picker('Pick a color')
+    #color3 = st.color_picker('Pick a color')   
 
-    col1, col2, col3, col4 = st.columns(4)
+    #col1, col2, col3, col4 = st.columns(4)
     #col1.write('Color 1 code:', color1)
     #col2.write('Color 2 code:', color2)
     #col3.write('Color 3 code:', color3)
