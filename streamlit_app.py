@@ -62,10 +62,9 @@ with col2:
     col2.write("This is column 3")
     col2.write("This is column 4")
 
-#tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
+tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 with tab1:
     tab1.write("this is tab 1")
-
 
 with tab2:    
     tab2.write("this is tab 2")
