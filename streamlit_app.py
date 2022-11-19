@@ -20,24 +20,29 @@ email = st.text_input('E-mail:')
 st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
 dbirth = st.date_input('Ok tell me your birthday')
 time = st.time_input('What time ?')
+st.text_area('Type a message that I will not read')
 st.write("Please contact us to get the details!")
 st.checkbox('I did not read but I agree')
 
 colA, colB, colC, colD, colE = st.columns(5)
 with colA:
     button1 = st.button('Click me')
+    st.text(button1)
 with colB:
     button2 = st.button('Do not click')
+    st.text(button2)
 with colC:
     button3 = st.button('Alright click')
-st.text_area('Type a message that I will not read')
+    st.text(button2)
+
+
 
 col4, col5 = st.columns(2)
 with col4:
     st.text(button1)
 with col5:
     st.text(time)
-    st.text('I am here',time)
+    st.text('I am here')
 
 
 with st.form(key='Form name'):
