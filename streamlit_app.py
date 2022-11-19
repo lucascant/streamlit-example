@@ -95,13 +95,14 @@ with tab2:
     color3 = st.color_picker('Pick a color')   
 
     col1, col2, col3, col4 = st.columns(4)
-    col1.write('Color 1 code:', color1)
-    col2.write('Color 2 code:', color2)
-    col3.write('Color 3 code:', color3)
-    col4.write('Color 4 code:', color4)
+    #col1.write('Color 1 code:', color1)
+    #col2.write('Color 2 code:', color2)
+    #col3.write('Color 3 code:', color3)
+    #col4.write('Color 4 code:', color4)
 
 with tab3:
-    st.file_uploader("Upload a file to nowhere")
+    file = st.file_uploader("Upload a file to nowhere")
+    
 
 with tab4:
     tab4.write("This is you told me so far")
