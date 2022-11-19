@@ -83,10 +83,10 @@ with tab1:
         task1 = st.text_input('Task')
     with col2:
         starttime = st.date_input('Start:')
-        time_start = st.time_input('What time ?')
+        #time_start = st.time_input('What time ?')
     with col3:
         endtime = st.date_input('End:')
-        time_end = st.time_input('What time ?')
+        #time_end = st.time_input('What time ?')
 
 with tab2:
     color1 = st.color_picker('Pick a color')
