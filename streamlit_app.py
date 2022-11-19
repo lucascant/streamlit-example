@@ -78,6 +78,7 @@ with col2:
 tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Hidden here", "you can guess","Check here"])
 
 with tab1:
+    col1, col2, col3 = st.columns(3)
     with col1:
         task1 = st.text_input('Task')
     with col2:
