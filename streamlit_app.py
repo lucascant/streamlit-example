@@ -74,7 +74,7 @@ with col101:
 
 ''' ========================= SPACE ============================='''
 color1 = st.color_picker('Pick a color') 
-col1.text(f'You chose color: {color1}')
+st.text(f'You chose color: {color1}')
 
 tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Hidden here", "you can guess","Check here"])
 
