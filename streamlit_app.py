@@ -18,16 +18,16 @@ In the meantime, below is an example of what you can do with just a few lines of
 st.title('Uber pickups in NYC')
 
 #input widgets
+'''
 st.sidebar.subheader('input features')
 var1 = st.sidebar.slider('feature 1:', 1, 100, 5)
 var2 = st.sidebar.slider('feature 2:', 1, 1000, 100)
 var3 = st.sidebar.slider('feature 3:', 1, 1000, 100)
-
+'''
 
 st.button('Click me')
 st.checkbox('I agree')
 st.radio('Pick one', ['cats', 'dogs'])
-'''
 st.selectbox('Pick one', ['cats', 'dogs'])
 st.multiselect('Buy', ['milk', 'apples', 'potatoes'])
 st.slider('Pick a number', 0, 100)
@@ -41,12 +41,13 @@ st.file_uploader('Upload a CSV')
 st.download_button('Download file', data)
 st.camera_input("Take a picture")
 st.color_picker('Pick a color')
-'''
 
+'''
 with st.form(key='Form name'):
     username = st.text_input('Username')
     password = st.text_input('Password')
     st.form_submit_button('Login')
+'''
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral LLL", 1, 5000, 1)
