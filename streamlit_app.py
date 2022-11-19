@@ -19,14 +19,17 @@ st.text_input('Last name:')
 st.text_input('E-mail:')
 st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
 st.date_input('Ok tell me your birthday')
-st.time_input('What time ?')
+time = st.time_input('What time ?')
 st.checkbox('I did not read but I agree')
 st.button('Click me')
 st.button('Do not click')
-st.button('Alright click then')
+button1 = st.button('Alright click then')
 st.write("Please contact us to get access!")
 st.text_area('Type a message that I will not read')
 st.color_picker('Pick a color if you wish')
+
+st.text(button1)
+st.text(time)
 
 #input widgets
 #st.sidebar.subheader('input features')
@@ -57,8 +60,23 @@ with col1:
     st.radio('Select one:', [1, 2])
 
 tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
-tab1.write("this is tab 1")
-tab2.write("this is tab 2")
+with tab1:
+    tab1.write("this is tab 1")
+    username = st.text_input('Username')
+    password = st.text_input('Password')
+    st.form_submit_button('Login')
+    st.form_submit_button('Cancel')
+
+with tab2:    
+    tab2.write("this is tab 2")
+    col1, col2, col3, col4 = st.columns(4)
+    col1.write("This is column 1")
+    col2.write("This is column 2")
+    col3.write("This is column 3")
+    col4.write("This is column 4")
+
+with tab3:
+    st.file_uploader("Upload a csv")
 
 with st.form(key='Form name'):
     username = st.text_input('Username')
