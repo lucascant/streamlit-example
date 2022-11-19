@@ -23,10 +23,11 @@ var1 = st.sidebar.slider('feature 1:', 1, 100, 5)
 var2 = st.sidebar.slider('feature 2:', 1, 1000, 100)
 var3 = st.sidebar.slider('feature 3:', 1, 1000, 100)
 
-'''
+
 st.button('Click me')
 st.checkbox('I agree')
 st.radio('Pick one', ['cats', 'dogs'])
+'''
 st.selectbox('Pick one', ['cats', 'dogs'])
 st.multiselect('Buy', ['milk', 'apples', 'potatoes'])
 st.slider('Pick a number', 0, 100)
