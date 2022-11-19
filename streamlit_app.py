@@ -91,7 +91,7 @@ with tab1:
 
 with tab2:
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4,col5,col6 = st.columns(6)
     col1.write('I will figure out')
     col2.write('Column')
     col2.write('Column')
@@ -102,13 +102,28 @@ with tab3:
     file = st.file_uploader("Upload a file to nowhere")
 
 with tab4:
+    col1, col2 = st.columns(2)
+    fname = st.text_input("Father`s name:").upper()
+    fdb = st.date_input('Father`s birthday')
+    faddress = st.text_input('Father`s address:').upper()
+    tab4.text(f'Your fist name is: {fname}')
+    mname = st.text_input('Mother`s Name:').upper()
+    mdb = st.date_input('Father`s birthday')
+    maddress = st.text_input('Mother`s address:').upper()
+    tab4.text(f'Your last name is: {lname}')
+    tab4.text(f'Your e-mail is : {email}')
+
+with tab5:
     tab4.write("This is you told me so far")
     tab4.text(f'Your fist name is: {fname}')
     tab4.text(f'Your last name is: {lname}')
     tab4.text(f'Your e-mail is : {email}')
 
-
-
+with tab6:
+    tab4.write("This is you told me so far")
+    tab4.text(f'Your fist name is: {fname}')
+    tab4.text(f'Your last name is: {lname}')
+    tab4.text(f'Your e-mail is : {email}')
 
 '''==     =    =   =  = = MORE SPACE = =  =   =    =     =='''
 '''==     =    =   =  = = MORE SPACE = =  =   =    =     =='''
