@@ -23,6 +23,7 @@ var1 = st.sidebar.slider('feature 1:', 1, 100, 5)
 var2 = st.sidebar.slider('feature 2:', 1, 1000, 100)
 var3 = st.sidebar.slider('feature 3:', 1, 1000, 100)
 
+'''
 st.button('Click me')
 st.checkbox('I agree')
 st.radio('Pick one', ['cats', 'dogs'])
@@ -39,6 +40,7 @@ st.file_uploader('Upload a CSV')
 st.download_button('Download file', data)
 st.camera_input("Take a picture")
 st.color_picker('Pick a color')
+'''
 
 with st.form(key='Form name'):
     username = st.text_input('Username')
