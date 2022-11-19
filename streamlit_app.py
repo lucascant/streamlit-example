@@ -22,26 +22,26 @@ dbirth = st.date_input('Ok tell me your birthday')
 time = st.time_input('What time ?')
 st.text_area('Type a message that I will not read')
 st.write("Please contact us to get the details!")
+st.multiselect('I would like:', ['orange', 'apples', 'peach'])
 st.checkbox('I did not read but I agree')
 
 colA, colB, colC, colD, colE = st.columns(5)
 with colA:
     button1 = st.button('Click me')
-    st.text(button1)
+    #st.text(button1)
 with colB:
     button2 = st.button('Do not click')
-    st.text(button2)
+    #st.text(button2)
 with colC:
     button3 = st.button('Alright click')
-    st.text(button3)
+    #st.text(button3)
 
 ''' SOMETHING HAPPENING HERE '''
 
 col4, col5 = st.columns(2)
 with col4:
-    st.text(button1)
+    st.text(fname)
 with col5:
-    st.text(time)
     st.text(f'I am here {time}')
 
 
@@ -57,20 +57,9 @@ with st.form(key='Form name'):
 #var2 = st.sidebar.slider('feature 2:', 1, 1000, 100)
 #var3 = st.sidebar.slider('feature 3:', 1, 1000, 100)
 
-'''
-st.button('Click me')
-st.checkbox('I agree')
-st.radio('Pick one', ['cats', 'dogs'])
-st.selectbox('Pick one', ['cats', 'dogs'])
-st.multiselect('Buy', ['milk', 'apples', 'potatoes'])
-st.slider('Pick a number', 0, 100)
-st.select_slider('Pick a size', ['S', 'M', 'L'])
-st.text_input('First name')
-st.number_input('Pick a number', 0, 10)
-st.text_area('Text to translate')
-st.time_input('Meeting time')
-st.color_picker('Pick a color')
-'''
+
+
+
 
 col100, col101 = st.columns(2)
 col100.write("This is column 1")
@@ -85,6 +74,7 @@ with col101:
 
 ''' ========================= SPACE ============================='''
 color1 = st.color_picker('Pick a color') 
+col1.text(f'You chose color: {color1}')
 
 tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Hidden here", "you can guess","Check here"])
 
@@ -107,16 +97,15 @@ with tab2:
     col2.write('Column')
     col2.write('Column')
 
-
 with tab3:
-    tab3.write("A little tricky")
+    tab3.write("I see some improvement")
     file = st.file_uploader("Upload a file to nowhere")
 
 with tab4:
     tab4.write("This is you told me so far")
-    tab4.write(fname)
-    tab4.write(lname)
-    tab4.write(email)
+    tab4.text(f'Your fist name is: {fname}')
+    tab4.text(f'Your last name is: {lname}')
+    tab4.text(f'Your e-mail is : {email}')
 
 
 
