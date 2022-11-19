@@ -101,7 +101,7 @@ with tab2:
     #col4.write('Color 4 code:', color4)
 
 with tab3:
-    file = st.file_uploader("Upload a file to nowhere")
+    #file = st.file_uploader("Upload a file to nowhere")
 
 
 with tab4:
