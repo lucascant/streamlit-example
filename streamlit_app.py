@@ -85,7 +85,7 @@ with st.form(key='Form name'):
     st.form_submit_button('Login')
     st.form_submit_button('Cancel')
 
-
+'''
 with col1
     task1 = st.text_input('Task')
 with col2
@@ -94,6 +94,8 @@ with col2
 with col3
     endtime = st.date_input('End:')
     time_end = st.time_input('What time ?')
+'''
+
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral LLL", 1, 5000, 2000)
