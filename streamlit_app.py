@@ -31,6 +31,7 @@ st.radio('Pick one', ['cats', 'dogs'])
 st.selectbox('Pick one', ['cats', 'dogs'])
 st.multiselect('Buy', ['milk', 'apples', 'potatoes'])
 st.slider('Pick a number', 0, 100)
+'''
 st.select_slider('Pick a size', ['S', 'M', 'L'])
 st.text_input('First name')
 st.number_input('Pick a number', 0, 10)
@@ -42,7 +43,7 @@ st.download_button('Download file', data)
 st.camera_input("Take a picture")
 st.color_picker('Pick a color')
 
-'''
+
 with st.form(key='Form name'):
     username = st.text_input('Username')
     password = st.text_input('Password')
