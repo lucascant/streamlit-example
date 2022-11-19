@@ -59,7 +59,8 @@ col2.write("This is column 2")
 with col1:
     st.radio('Select one:', [1, 2])
 with col2:
-    st.radio('Select one:', [1, 2])
+    col2.write("This is column 3")
+    col2.write("This is column 4")
 
 #tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
 with tab1:
