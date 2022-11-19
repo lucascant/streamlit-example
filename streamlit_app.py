@@ -21,9 +21,9 @@ st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
 dbirth = st.date_input('Ok tell me your birthday')
 time = st.time_input('What time ?')
 st.text_area('Type a message that I will not read')
-st.write("Please contact us to get the details!")
 st.multiselect('I would like:', ['orange', 'apples', 'peach'])
 st.checkbox('I did not read but I agree')
+st.write("Please contact us to get the details!")
 
 colA, colB, colC, colD, colE = st.columns(5)
 with colA:
@@ -36,13 +36,13 @@ with colC:
     button3 = st.button('Alright click')
     #st.text(button3)
 
-''' SOMETHING HAPPENING HERE '''
+''' PLEASE TRY TO LOG IN '''
 
-col4, col5 = st.columns(2)
-with col4:
-    st.text(fname)
-with col5:
-    st.text(f'I am here {time}')
+#col4, col5 = st.columns(2)
+#with col4:
+#    st.text(fname)
+#with col5:
+#    st.text(f'I was here at {time}')
 
 
 with st.form(key='Form name'):
