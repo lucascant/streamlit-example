@@ -20,16 +20,16 @@ email = st.text_input('E-mail:')
 st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
 dbirth = st.date_input('Ok tell me your birthday')
 time = st.time_input('What time ?')
+st.write("Please contact us to get the details!")
 st.checkbox('I did not read but I agree')
 
-colA, colB, colC, colD = st.columns(4)
+colA, colB, colC, colD, colE, colF = st.columns(6)
 with colA:
     button1 = st.button('Click me')
 with colB:
     button2 = st.button('Do not click')
 with colC:
     button3 = st.button('Alright click then')
-st.write("Please contact us to get access!")
 st.text_area('Type a message that I will not read')
 
 col4, col5 = st.columns(2)
@@ -89,10 +89,10 @@ with tab1:
         task1 = st.text_input('Task')
     with col2:
         starttime = st.date_input('Start:')
-        #time_start = st.time_input('What time ?')
-    with col3:
         endtime = st.date_input('End:')
-        #time_end = st.time_input('What time ?')
+    with col3:
+        time_start = st.time_input('What time ?')
+        time_end = st.time_input('What time ?')
 
 with tab2:
     col1, col2, col3, col4 = st.columns(4)
@@ -103,8 +103,8 @@ with tab2:
 
 
 with tab3:
-    #file = st.file_uploader("Upload a file to nowhere")
-    tab4.write("A little tricky")
+    tab3.write("A little tricky")
+    file = st.file_uploader("Upload a file to nowhere")
 
 with tab4:
     tab4.write("This is you told me so far")
@@ -115,8 +115,8 @@ with tab4:
 
 
 
-''' ============== MORE SPACE ============'''
-''' ============== MORE SPACE ============'''
+''' ====================== MORE SPACE ===================='''
+''' ====================== MORE SPACE ===================='''
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral LLL", 1, 5000, 2000)
