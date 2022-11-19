@@ -70,9 +70,9 @@ with col100:
 with col101:
     col101.write("This is column 2")
     col101.write("This is column 2")
-    st.button('Here')
 
-''' ========================= SPACE ============================='''
+
+'''==     =    =   =  = = SPACE = =  =   =    =     =='''
 color1 = st.color_picker('Pick a color') 
 st.text(f'You chose color: {color1}')
 
@@ -92,7 +92,7 @@ with tab1:
 with tab2:
 
     col1, col2, col3, col4 = st.columns(4)
-    col1.write(color1)
+    col1.write('I will figure out')
     col2.write('Column')
     col2.write('Column')
     col2.write('Column')
@@ -110,8 +110,8 @@ with tab4:
 
 
 
-''' ====================== MORE SPACE ===================='''
-''' ====================== MORE SPACE ===================='''
+'''==     =    =   =  = = MORE SPACE = =  =   =    =     =='''
+'''==     =    =   =  = = MORE SPACE = =  =   =    =     =='''
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral LLL", 1, 5000, 2000)
