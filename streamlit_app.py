@@ -42,7 +42,7 @@ with col4:
     st.text(button1)
 with col5:
     st.text(time)
-    st.text('I am here')
+    st.text(f'I am here {time}')
 
 
 with st.form(key='Form name'):
@@ -102,8 +102,6 @@ with tab1:
 with tab2:
 
     col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        color2 = st.color_picker('Pick a color') 
     col1.write(color1)
     col2.write('Column')
     col2.write('Column')
