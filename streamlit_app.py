@@ -14,9 +14,9 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 st.title('Uber not pickups')
 
-st.text_input('Fist name:')
-st.text_input('Last name:')
-st.text_input('E-mail:')
+fname = st.text_input('Fist name:')
+lname = st.text_input('Last name:')
+email = st.text_input('E-mail:')
 st.selectbox('Pick one', ['Too Young', 'A little Lost','Too old'])
 dbirth = st.date_input('Ok tell me your birthday')
 time = st.time_input('What time ?')
@@ -34,7 +34,6 @@ with col4:
 with col5:
     st.text(time)
     st.text('I am here')
-
 
 
 with st.form(key='Form name'):
@@ -74,36 +73,47 @@ with col2:
     col2.write("This is column 3")
     col2.write("This is column 4")
 
-tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Hidden here", "you can guess","Check here"])
-with tab1:
-    tab1.write("this is tab 1")
+''' ============== SPACE ============'''
 
-with tab2:    
-    tab2.write("this is tab 2")
+tab1, tab2, tab3, tab4 = st.tabs(["Tab 1", "Hidden here", "you can guess","Check here"])
+
+with tab1:
+    with col1
+        task1 = st.text_input('Task')
+    with col2
+        starttime = st.date_input('Start:')
+        time_start = st.time_input('What time ?')
+    with col3
+        endtime = st.date_input('End:')
+        time_end = st.time_input('What time ?')
+
+with tab2:
+    color1 = st.color_picker('Pick a color')
+    color2 = st.color_picker('Pick a color')
+    color3 = st.color_picker('Pick a color')
+    color3 = st.color_picker('Pick a color')   
+
     col1, col2, col3, col4 = st.columns(4)
-    col1.write("This is column 1")
-    col2.write("This is column 2")
-    col3.write("This is column 3")
-    col4.write("This is column 4")
+    col1.write('Color 1 code:', color1)
+    col2.write('Color 2 code:', color2)
+    col3.write('Color 3 code:', color3)
+    col4.write('Color 4 code:', color4)
 
 with tab3:
     st.file_uploader("Upload a file to nowhere")
 
 with tab4:
-    tab1.write("There is nothing to see here")
+    tab4.write("This is you told me so far")
+    tab4.write(fname)
+    tab4.write(lname)
+    tab4.write(email)
 
 
-'''
-with col1
-    task1 = st.text_input('Task')
-with col2
-    starttime = st.date_input('Start:')
-    time_start = st.time_input('What time ?')
-with col3
-    endtime = st.date_input('End:')
-    time_end = st.time_input('What time ?')
-'''
 
+
+
+''' ============== MORE SPACE ============'''
+''' ============== MORE SPACE ============'''
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral LLL", 1, 5000, 2000)
