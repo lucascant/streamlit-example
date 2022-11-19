@@ -27,12 +27,10 @@ st.button('Do not click')
 st.button('Alright click then')
 
 #input widgets
-'''
-st.sidebar.subheader('input features')
-var1 = st.sidebar.slider('feature 1:', 1, 100, 5)
-var2 = st.sidebar.slider('feature 2:', 1, 1000, 100)
-var3 = st.sidebar.slider('feature 3:', 1, 1000, 100)
-'''
+#st.sidebar.subheader('input features')
+#var1 = st.sidebar.slider('feature 1:', 1, 100, 5)
+#var2 = st.sidebar.slider('feature 2:', 1, 1000, 100)
+#var3 = st.sidebar.slider('feature 3:', 1, 1000, 100)
 
 '''
 st.button('Click me')
@@ -48,12 +46,9 @@ st.number_input('Pick a number', 0, 10)
 st.text_area('Text to translate')
 st.date_input('Your birthday')
 st.time_input('Meeting time')
-#st.file_uploader('Upload a CSV')
-#st.download_button('Download file', data)
-st.camera_input("Take a picture")
 st.color_picker('Pick a color')
 
-
+'''
 with st.form(key='Form name'):
     username = st.text_input('Username')
     password = st.text_input('Password')
