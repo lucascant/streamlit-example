@@ -151,13 +151,13 @@ with tab5:
     maddress = st.text_input('Mother`s address:').upper()
 
     ''' Child`s information: '''
-    col3, col4 = st.columns(2)
-    with col3:
+    col5, col6 = st.columns(2)
+    with col5:
         mname = st.text_input('Child`s Name:').upper()
         status_list = ['Annulled marriage','Divorced','Legally Separated','Married-physically present',
                     'Married-not physically present','Single','Widowed']
         mstatus = st.selectbox('Child`s Marital Status',status_list)
-    with col4:
+    with col6:
         mdb = st.date_input('Child`s birthday')
         mocupation = st.text_input('Child`s Ocupation')
     maddress = st.text_input('Child`s address:').upper()
