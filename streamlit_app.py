@@ -76,12 +76,12 @@ with col101:
 color1 = st.color_picker('Pick a color') 
 st.text(f'You chose color: {color1}')
 
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Tab 1", 
-                                "Hidden here", 
-                                "you can guess",
-                                "Check here",
-                                "Another Tab",
-                                "And another one"])
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Task list", 
+                                            "Hidden here", 
+                                            "you can guess",
+                                            "Check here",
+                                            "Another Tab",
+                                            "And another one"])
 
 with tab1:
     col1, col2, col3 = st.columns(3)
@@ -107,30 +107,65 @@ with tab3:
     file = st.file_uploader("Upload a file to nowhere")
 
 with tab4:
-    col1, col2 = st.columns(2)
-    with col1:
-        fname = st.text_input("Father`s name:").upper()
-    with col2:
-        fdb = st.date_input('Father`s birthday')
-    faddress = st.text_input('Father`s address:').upper()
-    tab4.text(f'Your fist name is: {fname}')
-
-    col3, col4 = st.columns(2)
-    with col3:
-        mname = st.text_input('Mother`s Name:').upper()
-    with col4:
-        mdb = st.date_input('Mother`s birthday')
-    maddress = st.text_input('Mother`s address:').upper()
-
-
-with tab5:
     tab5.write("This is you told me so far")
     tab5.text(f'Your fist name is: {fname}')
     tab5.text(f'Your last name is: {lname}')
     tab5.text(f'Your e-mail is : {email}')
 
+with tab5:
+        ''' Souse`s information: '''
+    col1, col2 = st.columns(2)
+    with col1:
+        fname = st.text_input("Spouse`s name:").upper()
+        status_list = ['Annulled marriage','Divorced','Legally Separated','Married-physically present',
+                    'Married-not physically present','Single','Widowed']
+        fstatus = st.selectbox('Spouse`s Marital Status',status_list)
+    with col2:
+        fdb = st.date_input('Spouse`s birthday')
+        focupation = st.text_input('Spouse`s Ocupation')
+    faddress = st.text_input('Spouse`s address:').upper()
+
+    ''' Father`s information: '''
+    col1, col2 = st.columns(2)
+    with col1:
+        fname = st.text_input("Father`s name:").upper()
+        status_list = ['Annulled marriage','Divorced','Legally Separated','Married-physically present',
+                    'Married-not physically present','Single','Widowed']
+        fstatus = st.selectbox('Father`s Marital Status',status_list)
+    with col2:
+        fdb = st.date_input('Father`s birthday')
+        focupation = st.text_input('Father`s Ocupation')
+    faddress = st.text_input('Father`s address:').upper()
+
+
+    ''' Mother`s information: '''
+    col3, col4 = st.columns(2)
+    with col3:
+        mname = st.text_input('Mother`s Name:').upper()
+        status_list = ['Annulled marriage','Divorced','Legally Separated','Married-physically present',
+                    'Married-not physically present','Single','Widowed']
+        mstatus = st.selectbox('Mother`s Marital Status',status_list)
+    with col4:
+        mdb = st.date_input('Mother`s birthday')
+        mocupation = st.text_input('Mother`s Ocupation')
+    maddress = st.text_input('Mother`s address:').upper()
+
+    ''' Child`s information: '''
+    col3, col4 = st.columns(2)
+    with col3:
+        mname = st.text_input('Child`s Name:').upper()
+        status_list = ['Annulled marriage','Divorced','Legally Separated','Married-physically present',
+                    'Married-not physically present','Single','Widowed']
+        mstatus = st.selectbox('Child`s Marital Status',status_list)
+    with col4:
+        mdb = st.date_input('Child`s birthday')
+        mocupation = st.text_input('Child`s Ocupation')
+    maddress = st.text_input('Child`s address:').upper()
+
+
+
 with tab6:
-    tab6.write("This is you told me so far")
+    tab6.write("Please review your information:")
     tab6.text(f'Your fist name is: {fname}')
     tab6.text(f'Your last name is: {lname}')
     tab6.text(f'Your e-mail is : {email}')
