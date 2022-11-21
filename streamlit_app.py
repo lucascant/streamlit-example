@@ -113,7 +113,6 @@ with tab4:
     tab5.text(f'Your e-mail is : {email}')
 
 with tab5:
-        ''' Souse`s information: '''
     col1, col2 = st.columns(2)
     with col1:
         fname = st.text_input("Spouse`s name:").upper()
@@ -126,38 +125,38 @@ with tab5:
     faddress = st.text_input('Spouse`s address:').upper()
 
     ''' Father`s information: '''
-    col1, col2 = st.columns(2)
-    with col1:
+    col3, col4 = st.columns(2)
+    with col3:
         fname = st.text_input("Father`s name:").upper()
         status_list = ['Annulled marriage','Divorced','Legally Separated','Married-physically present',
                     'Married-not physically present','Single','Widowed']
         fstatus = st.selectbox('Father`s Marital Status',status_list)
-    with col2:
+    with col4:
         fdb = st.date_input('Father`s birthday')
         focupation = st.text_input('Father`s Ocupation')
     faddress = st.text_input('Father`s address:').upper()
 
 
     ''' Mother`s information: '''
-    col3, col4 = st.columns(2)
-    with col3:
+    col5, col6 = st.columns(2)
+    with col5:
         mname = st.text_input('Mother`s Name:').upper()
         status_list = ['Annulled marriage','Divorced','Legally Separated','Married-physically present',
                     'Married-not physically present','Single','Widowed']
         mstatus = st.selectbox('Mother`s Marital Status',status_list)
-    with col4:
+    with col6:
         mdb = st.date_input('Mother`s birthday')
         mocupation = st.text_input('Mother`s Ocupation')
     maddress = st.text_input('Mother`s address:').upper()
 
     ''' Child`s information: '''
-    col5, col6 = st.columns(2)
-    with col5:
+    col7, col8 = st.columns(2)
+    with col7:
         mname = st.text_input('Child`s Name:').upper()
         status_list = ['Annulled marriage','Divorced','Legally Separated','Married-physically present',
                     'Married-not physically present','Single','Widowed']
         mstatus = st.selectbox('Child`s Marital Status',status_list)
-    with col6:
+    with col8:
         mdb = st.date_input('Child`s birthday')
         mocupation = st.text_input('Child`s Ocupation')
     maddress = st.text_input('Child`s address:').upper()
